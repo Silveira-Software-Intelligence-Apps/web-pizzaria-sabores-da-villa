@@ -3,9 +3,17 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Pizzaria Sabores da Villa',
-  description: 'pizzaria de qualidade em Osasco. Atendimento rápido e profissional.',
-  openGraph: { title: 'Pizzaria Sabores da Villa', description: 'Pizzaria Sabores da Villa — pizzaria em Osasco. pizzaria de qualidade em Osasco. Atendimento rápido e profissional.', type: 'website' },
+  title: 'Pizzaria Sabores da Villa — Osasco',
+  description: 'Produtos selecionados com qualidade garantida. Visite a Pizzaria Sabores da Villa em Osasco e encontre o que você procura.',
+  keywords: 'Pizzaria Sabores da Villa, pizzaria, pizzaria Osasco, Osasco, melhor pizzaria, pizzaria profissional',
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: 'Pizzaria Sabores da Villa',
+    description: 'Pizzaria Sabores da Villa — pizzaria em Osasco. Produtos selecionados com qualidade garantida. Visite a Pizzaria Sabores da Villa em Osasco e encontre o que você procura.',
+    type: 'website',
+    locale: 'pt_BR',
+    siteName: 'Pizzaria Sabores da Villa',
+  },
 };
 
 export default function RootLayout({ children }) {
